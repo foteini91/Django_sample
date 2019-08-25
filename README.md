@@ -3,10 +3,15 @@ This is a sample project in Django framework
 
 # Set up virtual environment for Django
 In terminal inside the project directory, /home/foteinip/DjangoTest/Django_sample/trydjango we type:
+
 virtualenv -p python3 .
+
 To activate the v.e. we type:
+
 source bin/activate
+
 After entering the virtual environment, we install Django. 
+
 pip install django==2.0.7
 
 # Directories
@@ -16,8 +21,9 @@ python manage.py runserver
 
 # How to test
 Since the server is up and running we can test the methods we created. 
-How to test
+
 1. list of all names -- 127.0.0.1:8000/names/
+
    *it returns a list template with the names from the csv
 2. get a name by id -- 127.0.0.1:8000/names/1/
    *note that this is not exaclty what you asked beacause i faced issues with the urls. It returned Not found: The requested URL/names/1/ was not found on this server. This is the reason why i hardcoded the ids in the get_name_by_id view. It returns the right name.
